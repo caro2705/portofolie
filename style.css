@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: var(--color-antic)
+    background-color: var(--color-antic);
 }
 
 * {
@@ -120,10 +120,14 @@ header {
 .dropbtn {
     background-color: var(--color-lightblue);
     color: white;
-    padding: 16px;
+    padding: 26px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    background-image: url(billeder/portofolie/burger_menu.png);
+    background-repeat: no-repeat;
+
+
 }
 
 .dropbtn:hover,
@@ -135,7 +139,6 @@ header {
     position: relative;
     display: inline-block;
 }
-
 
 .dropdown-content {
     display: none;
@@ -369,7 +372,7 @@ footer p {
         column-count: 2;
     }
 
-    .redesign_2 img {
+    .bund img {
         width: 40%;
     }
 
