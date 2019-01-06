@@ -265,6 +265,22 @@ video {
     width: 100%;
 }
 
+.txt_pilot_1 {
+    flex-basis: 400px;
+    flex-grow: 1;
+    padding-right: 2vw;
+}
+
+.pilot_videoer {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.pilot_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 2;
+}
 
 
 /**********INFOLFS KAFFEBAR**********/
@@ -348,9 +364,6 @@ footer p {
 
     .am_flex img {
         width: 70%;
-        margin: 0 auto;
-        display: block;
-        padding: 9px;
     }
 
     .porth1 {
@@ -380,22 +393,6 @@ footer p {
         opacity: 0.5;
     }
 
-    .txt_pilot_1 {
-        flex-basis: 400px;
-        flex-grow: 1;
-        padding-right: 2vw;
-    }
-
-    .pilot_videoer {
-        flex-basis: 200px;
-        flex-grow: 1;
-    }
-
-    .pilot_sectionwrapper {
-        display: flex;
-        flex-wrap: wrap;
-        column-count: 2;
-    }
 
     .bund img {
         width: 40%;
