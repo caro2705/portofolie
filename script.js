@@ -1,26 +1,63 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+
+window.addEventListener("load", sidenVises);
+
+function sidenVises() {
+    console.log("siden vises!");
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
+function toggleMenu() {
+    console.log("Toggle menu");
+    document.querySelector("#menu").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.querySelector("#menuknap").textContent = "☰";
+    } else {
+        document.querySelector("#menuknap").textContent = "x";
     }
 }
 
 
 
-// When the user scrolls down 20px from the top of the document, show the button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////Jeg har fået disse javaScript fra w3school
+//function myFunction() {
+//    document.getElementById("myDropdown").classList.toggle("show");
+//}
+//
+//window.add = function (event) {
+//    if (!event.target.matches('.dropbtn')) {
+//        var dropdowns = document.getElementsByClassName("dropdown-content");
+//        var i;
+//        for (i = 0; i < dropdowns.length; i++) {
+//            var openDropdown = dropdowns[i];
+//            if (openDropdown.classList.contains('show')) {
+//                openDropdown.classList.remove('show');
+//            }
+//        }
+//    }
+//}
+
+
 window.onscroll = function () {
     scrollFunction()
 };
@@ -33,7 +70,7 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
