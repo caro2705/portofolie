@@ -125,18 +125,22 @@ header {
 
 #menuknap {
     display: inline-block;
-    font-size: 45px;
+    font-size: 48px;
     font-family: 'Quicksand', sans-serif;
+    padding-left: 8px;
 
 }
 
 #menu {
     list-style-type: none;
-    transform-origin: top left;
     background-color: var(--color-lightblue);
     padding-left: 0px;
+    margin-top: -14px;
     width: 100vw;
-    font-size: 23px;
+    height: 100vh;
+    font-size: 30px;
+    text-align: center;
+
 
 }
 
