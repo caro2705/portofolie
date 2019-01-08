@@ -120,11 +120,12 @@ header {
 /***********MENU 2***********/
 .hidden {
     transform: scale(0);
+    display: none;
 }
 
 #menuknap {
     display: inline-block;
-    font-size: 50px;
+    font-size: 45px;
     font-family: 'Quicksand', sans-serif;
 
 }
@@ -134,7 +135,7 @@ header {
     transform-origin: top left;
     background-color: var(--color-lightblue);
     padding-left: 0px;
-    width: 46vw;
+    width: 100vw;
     font-size: 23px;
 
 }
